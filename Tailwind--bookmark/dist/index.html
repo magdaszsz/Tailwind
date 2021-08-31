@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>First tailwind page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<header>
+  <nav class="border border-black container flex  justify-between items-center border-gray-700 p-4 mt-4 sm:mt-12">
+    <div class="py-1">
+      <img src="../images/logo-dark.svg" alt="">
+    </div>
+    <ul class="border border-black hidden sm:flex flex-1 border-gray-700  justify-end items-center gap-12 text-blue-900 font-semibold uppercase text-lg">
+      <li class="cursor-pointer">Features</li>
+      <li class="cursor-pointer">Pricing</li>
+      <li class="cursor-pointer">Contact</li>
+      <button type="button" class="bg-red-500 text-white rounded-md px-7 uppercase py-2">Login</button>
+    </ul>
+    <div class="cursor-pointer flex sm:hidden justify-end"><img src="../images/icon-hamburger.svg" alt=""></div>
+  </nav>
+</header>
+<main>
+  <section>
+    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+      <div class="flex flex-1 flex-col items-center lg:items-start">
+        <h2 class="text-blue-500 text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">A simple bookmark manager</h2>
+        <p class="text-gray-600 text-lg text-center lg:text-left mb-6">A clean and simple interface to organize your favourite websites.
+          Open a new browser tab and see your sites load instantly. Try it for free. </p>
+          <div class="flex justify-center flex-wrap gap-6"></div>
+      </div>
+    </div>
+  </section>
+</main>
+    <script src="script.js"></script>
+  </body>
+</html>
