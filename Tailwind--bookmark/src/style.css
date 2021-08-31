@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+.btn {
+  @apply shadow-md py-3 px-6 rounded-md  border border-2 transition duration-300;
+}
+/* 
+.btn-blue:hover {
+  @apply bg-white text-bk-blue
+} */
+
+.btn-blue {
+  @apply bg-bk-blue text-white border-bk-blue;
+}
+
+.btn-white {
+  @apply border-transparent;
+}
+
+/* .btn-white:hover {
+  @apply border-black;
+} */
+

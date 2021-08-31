@@ -8,31 +8,101 @@
   </head>
   <body>
 <header>
-  <nav class="border border-black container flex  justify-between items-center border-gray-700 p-4 mt-4 sm:mt-12">
+  <nav class="container flex  justify-between items-center border-gray-700 p-4 mt-4 sm:mt-12">
     <div class="py-1">
       <img src="../images/logo-dark.svg" alt="">
     </div>
-    <ul class="border border-black hidden sm:flex flex-1 border-gray-700  justify-end items-center gap-12 text-blue-900 font-semibold uppercase text-lg">
+    <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bk-dark-blue font-semibold uppercase text-lg">
       <li class="cursor-pointer">Features</li>
       <li class="cursor-pointer">Pricing</li>
       <li class="cursor-pointer">Contact</li>
-      <button type="button" class="bg-red-500 text-white rounded-md px-7 uppercase py-2">Login</button>
+      <button type="button" class="bg-bk-red border border-4 border-bk-red text-white rounded-md px-7 uppercase py-2 transition duration-300 hover:bg-white hover:text-bk-red">Login</button>
     </ul>
     <div class="cursor-pointer flex sm:hidden justify-end"><img src="../images/icon-hamburger.svg" alt=""></div>
   </nav>
 </header>
 <main>
   <section>
-    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
-      <div class="flex flex-1 flex-col items-center lg:items-start">
-        <h2 class="text-blue-500 text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">A simple bookmark manager</h2>
-        <p class="text-gray-600 text-lg text-center lg:text-left mb-6">A clean and simple interface to organize your favourite websites.
+    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28 justify-evenly">
+      <div class="flex flex-col lg:items-start lg:w-1/2">
+        <h2 class="text-bk-dark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6 font-semibold">A simple bookmark manager</h2>
+        <p class="text-bk-grayish-blue text-lg text-center lg:text-left mb-6">A clean and simple interface to organize your favourite websites.
           Open a new browser tab and see your sites load instantly. Try it for free. </p>
-          <div class="flex justify-center flex-wrap gap-6"></div>
+          <div class="flex justify-center items-center flex-wrap gap-6">
+            <button type="button" class="btn btn-blue hover:bg-white hover:text-bk-blue">Get it on Chrome</button>
+            <button type="button" class="btn btn-white hover:border-black">Get it on Windows</button>
+           
+          </div>
+           
       </div>
+      <div class="flex justify-center mb-10 md:mb-16 lg:mb-0">
+              <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 lg:w-full lg:h-full" src="../images/illustration-hero.svg" alt="">
+            </div>
     </div>
   </section>
+  <section class="bg-gray-100 py-20 mt-20 lg:mt-60">
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto px-4">
+      <h2 class="text-3xl text-center text-bk-dark-blue font-semibold">Features</h2>
+      <p class="text-center text-md font-semibold text-bk-grayish-blue mt-4">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go. </p>
+    </div>
+    <!-- feature 1 wrapper -->
+    <div class="container p-12 flex flex-col-reverse items-center justify-evenly gap-y-8 lg:flex-row my-12">
+      <div class="flex flex-col  items-center content-center lg:items-start ">
+        <h2 class="font-semibold text-bk-dark-blue text-4xl text-center lg:text-left">Bookmark in one click</h2>
+        <p class="text-bk-grayish-blue my-12 max-w-md text-xl text-center lg:text-left">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites. </p>
+        <button type="button" class="btn btn-blue">More Info</button>
+      </div>
+      <div class="flex justify-center">
+        <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 lg:w-full lg:h-full" src="../images/illustration-features-tab-1.svg" alt="">
+      </div>
+    </div>
+    <!-- end of feature 1 -->
+    <div class="container p-12 bg-gray-200 flex flex-col-reverse items-center justify-evenly lg:flex-row-reverse">
+    <div class="flex flex-col items-center content-center lg:items-end my-6">
+      <h2 class="font-semibold text-bk-dark-blue text-4xl text-center lg:text-left">
+        Intelligent search
+      </h2>
+      <p class="text-bk-grayish-blue my-12 max-w-md text-xl text-center lg:text-right">
+        Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks. 
+      </p>
+       <button type="button" class="btn btn-blue">More Info</button>
+       </div>
+    <div class="flex justify-center">
+        <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 lg:w-full lg:h-full" src="../images/illustration-features-tab-2.svg" alt="">
+      </div>
+    </div>
+    <!-- end of feature 2 -->
+    <div class="container p-12 flex flex-col-reverse lg:flex-row items-center justify-evenly py-8">
+      <div class="flex flex-col items-center lg:items-start my-8">
+        <h2 class="font-semibold text-bk-dark-blue text-4xl text-center lg:text-left">
+          Share your bookmarks
+        </h2>
+        <p class="max-w-md text-center lg:text-left my-8 text-bk-grayish-blue text-xl">
+          Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button. 
+        </p>
+        <button type="button" class="btn btn-blue">More Info</button>
+      </div>
+      <div class="flex justify-center">
+        <img src="../images/illustration-features-tab-3.svg" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 lg:w-full lg:h-full" alt="">
+      </div>
+    </div>
+
+  </section>
 </main>
+<footer class="px-12 flex flex-col py-12 items-center lg:flex-row bg-bk-dark-blue">
+  <img class="block" src="../images/logo-bookmark.svg" alt="">
+<ul class="flex text-center flex-col gap-6 lg:flex-row lg:gap-12 my-6 lg:ml-12">  
+  <li class="uppercase text-white font-md cursor-pointer hover:text-bk-red">features</li>
+  <li class="uppercase text-white font-md cursor-pointer hover:text-bk-red">contact</li>
+  <li class="uppercase text-white font-md cursor-pointer hover:text-bk-red">pricing</li>
+</ul>
+<ul class="flex flex-row gap-12 lg:ml-auto">
+  <li><img src="../images/icon-facebook.svg" alt=""></li>
+  <li>
+    <img src="../images/icon-twitter.svg" alt="">
+  </li>
+</ul>
+</footer>
     <script src="script.js"></script>
   </body>
 </html>
